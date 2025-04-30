@@ -9,14 +9,15 @@
     body {
       margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
-      background-color: #ffffff;
-      color: #222;
+      background: #f4f6f8;
+      color: #333;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     a {
       text-decoration: none;
-      color: #000;
+      color: inherit;
     }
 
     img {
@@ -26,10 +27,15 @@
 
     /* Header */
     header {
-      background-color: #000;
+      background: linear-gradient(135deg, #2c3e50, #4b6cb7);
       color: #fff;
-      padding: 60px 20px;
+      padding: 0px 20px 100px;
       text-align: center;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     header h1 {
@@ -39,9 +45,18 @@
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 10px;
       letter-spacing: 1px;
+    }
+
+    header .profile-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      margin-top: 15h0px;
     }
 
     /* Main Content */
@@ -52,108 +67,182 @@
     }
 
     section {
-      border-top: 2px solid #e0e0e0;
-      padding: 30px 0;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.8s ease-in-out;
     }
 
     h2 {
       font-size: 1.8rem;
-      color: #000;
-      margin-bottom: 15px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 8px;
     }
 
     ul {
       padding-left: 20px;
+      color: #555;
     }
 
     ul li {
       margin-bottom: 10px;
     }
 
-    /* Profile Image */
     .profile-img {
       text-align: center;
-      margin-top: -60px;
+      margin-top: -70px;
     }
 
-    .profile-img img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 5px solid #000;
-      object-fit: cover;
+    /* Contact Form */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #4b6cb7;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #2c3e50;
     }
 
     /* Footer */
     footer {
-      background-color: #000;
-      color: #fff;
+      background-color: #2c3e50;
+      color: white;
       text-align: center;
       padding: 20px 10px;
       font-size: 0.9rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Scroll Effect */
+    section {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Animation for smooth section fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>ARJUNHARSHIT K S</h1>
     <p>Aspiring Developer | CS & Mathematics Student</p>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Profile Image -->
     <div class="profile-img">
       <img src="images.jpg" alt="ARJUNHARSHIT K S">
     </div>
+  </header>
 
-    <!-- About Me Section -->
+  <main>
     <section>
       <h2>About Me</h2>
       <p>
-        Hello! I’m <strong>ARJUNHARSHIT K S</strong>, a recent Class 12 graduate from <strong>SKV Vidhyaashram CBSE School</strong>.
-        I specialized in <strong>Computer Science</strong> and <strong>Mathematics</strong>, and I am expecting a final score of <strong>70–80%</strong>.
-        In my Class 10 board exams, I scored <strong>80.5%</strong>. I am passionate about technology, problem-solving, and programming,
-        and I’m actively exploring web development and software engineering to build a solid foundation for my future career.
+        Hello! I'm <strong>ARJUNHARSHIT K S</strong>, an enthusiastic and self-driven learner with a passion for technology, software development, and continuous growth. I recently completed my Class 12 education at <strong>SKV Vidhyaashram CBSE School</strong>, where I specialized in <strong>Computer Science</strong> and <strong>Mathematics</strong>.
+      </p>
+      <p>
+        I am fascinated by how technology shapes the modern world and am especially interested in building intuitive and impactful digital experiences. Whether it's coding a new feature, designing a clean interface, or solving algorithmic challenges, I enjoy every part of the development process.
+      </p>
+      <p>
+        I'm currently focused on mastering front-end and back-end development, and I regularly engage with open-source projects and online communities to stay updated with industry trends.
       </p>
     </section>
 
-    <!-- Skills Section -->
     <section>
       <h2>Skills</h2>
       <ul>
-        <li>Programming Languages: Python, C++, JavaScript</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Software Tools: Git, VS Code, Figma</li>
-        <li>Problem Solving: Algorithms, Data Structures</li>
-        <li>Soft Skills: Teamwork, Communication, Time Management</li>
+        <li><strong>Languages:</strong> Python, C++, JavaScript</li>
+        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Figma</li>
+        <li><strong>Problem Solving:</strong> Algorithms, Data Structures</li>
+        <li><strong>Soft Skills:</strong> Communication, Teamwork, Time Management</li>
       </ul>
     </section>
 
-    <!-- Projects Section -->
     <section>
       <h2>Projects</h2>
       <ul>
-        <li><strong>Personal Portfolio Website</strong> – A responsive website showcasing my skills and projects.</li>
-        <li><strong>Task Manager Application</strong> – A web-based application to manage daily tasks and to-do lists.</li>
-        <li><strong>Weather Forecast App</strong> – A mobile app providing real-time weather updates using an external API.</li>
+        <li><strong>Personal Portfolio Website:</strong> A responsive website to showcase my resume, projects, and contact info using HTML, CSS, and JavaScript.</li>
+        <li><strong>Task Manager Application:</strong> A simple to-do list web app to manage daily tasks efficiently with a clean user interface.</li>
+        <li><strong>Weather Forecast App:</strong> A mobile-friendly weather app that fetches live data using an external API.</li>
+        <li><strong>School Notice Board App:</strong> A local notification system to display announcements and events for students and teachers.</li>
       </ul>
     </section>
 
-    <!-- Contact Information Section -->
     <section>
-      <h2>Contact Information</h2>
-      <p><strong>Email:</strong> <a href="mailto:arjunharshit2106@gmail.com">arjunharshit2106@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+919363738699">+91 93637 38699</a></p>
+      <h2>Contact Me</h2>
+      <p>
+        I’m always open to new opportunities, collaborations, or even just a chat about technology and development.
+        Feel free to reach out using the form below or through my contact details.
+      </p>
+
+      <ul style="list-style: none; padding-left: 0; color: #2c3e50;">
+        <li><strong>📧 Email:</strong> <a href="mailto:arjunharshit2106@gmail.com">arjunharshit2106@gmail.com</a></li>
+        <li><strong>📞 Phone:</strong> <a href="tel:+919363738699">+91 93637 38699</a></li>
+        <li><strong>🌍 Location:</strong> Tamil Nadu, India</li>
+        <li><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/arjunharshit" target="_blank">linkedin.com/in/arjunharshit</a></li>
+      </ul>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="button" onclick="submitForm()">Send Message</button>
+      </form>
+      <p id="form-response" style="color: green;"></p>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 ARJUNHARSHIT K S. All rights reserved.</p>
   </footer>
 
+  <script>
+    function submitForm() {
+      // Simple validation
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        // If valid, show thank you message
+        document.getElementById('form-response').textContent = 'Thank you for your message. I\'ll get back to you soon!';
+        document.getElementById('contact-form').reset();
+      } else {
+        // Show error if fields are missing
+        document.getElementById('form-response').textContent = 'Please fill out all fields.';
+        document.getElementById('form-response').style.color = 'red';
+      }
+    }
+  </script>
 </body>
 </html>
