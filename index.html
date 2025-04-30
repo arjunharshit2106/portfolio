@@ -2,46 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARJUNHARSHIT K S - Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Header */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      border-top: 2px solid #e0e0e0;
+      padding: 30px 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      text-align: center;
+      margin-top: -60px;
+    }
+
+    .profile-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #000;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #eef1f5; color: #333;">
+<body>
 
   <!-- Header -->
-  <header style="background-color: #1a237e; color: white; padding: 40px 20px; text-align: center;">
-    <h1 style="margin: 0; font-size: 2.5rem;">ARJUNHARSHIT K S</h1>
-    <p style="font-size: 1.2rem;">Aspiring Developer | CS & Mathematics Student</p>
+  <header>
+    <h1>ARJUNHARSHIT K S</h1>
+    <p>Aspiring Developer | CS & Mathematics Student</p>
   </header>
 
   <!-- Main Content -->
-  <main style="max-width: 900px; margin: 30px auto; padding: 0 20px;">
-    <div style="text-align: center; margin-top: 15px;">
-        <img src="WhatsApp Image 2024-12-15 at 07.39.09_41d8fc35.jpg" alt="profile" 
-             style="width: 350px; height: 350px; border-radius: 50%; object-fit: cover; border: 3px solid #1a237e;">
-      </div>
-      
+  <main>
+    <!-- Profile Image -->
+    <div class="profile-img">
+      <img src="images.jpg" alt="ARJUNHARSHIT K S">
+    </div>
 
     <!-- About Me Section -->
-    <section style="background-color: #fff; border-radius: 8px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-      <h2 style="color: #1a237e; border-bottom: 2px solid #eee; padding-bottom: 8px;">About Me</h2>
-      <p style="line-height: 1.6; font-size: 1rem;">
-        Hello! I’m <strong>ARJUNHARSHIT K S</strong>, a recent Class 12 graduate from <strong>SKV Vidhyaashram CBSE School</strong>. 
-        I specialized in <strong>Computer Science</strong> and <strong>Mathematics</strong>, and I am expecting a final score of <strong>70–80%</strong>. 
-        In my Class 10 board exams, I scored <strong>80.5%</strong>. I am passionate about technology, problem-solving, and programming, 
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m <strong>ARJUNHARSHIT K S</strong>, a recent Class 12 graduate from <strong>SKV Vidhyaashram CBSE School</strong>.
+        I specialized in <strong>Computer Science</strong> and <strong>Mathematics</strong>, and I am expecting a final score of <strong>70–80%</strong>.
+        In my Class 10 board exams, I scored <strong>80.5%</strong>. I am passionate about technology, problem-solving, and programming,
         and I’m actively exploring web development and software engineering to build a solid foundation for my future career.
       </p>
     </section>
 
-    <!-- Contact Section -->
-    <section style="background-color: #fff; border-radius: 8px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-      <h2 style="color: #1a237e; border-bottom: 2px solid #eee; padding-bottom: 8px;">Contact Information</h2>
-      <p style="font-size: 1rem;"><strong>Email:</strong> <a href="mailto:arjunharshit2106@gmail.com" style="color: #1a237e; text-decoration: none;">arjunharshit2106@gmail.com</a></p>
-      <p style="font-size: 1rem;"><strong>Phone:</strong> <a href="tel:+919363738699" style="color: #1a237e; text-decoration: none;">+91 93637 38699</a></p>
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Python, C++, JavaScript</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Software Tools: Git, VS Code, Figma</li>
+        <li>Problem Solving: Algorithms, Data Structures</li>
+        <li>Soft Skills: Teamwork, Communication, Time Management</li>
+      </ul>
     </section>
 
+    <!-- Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio Website</strong> – A responsive website showcasing my skills and projects.</li>
+        <li><strong>Task Manager Application</strong> – A web-based application to manage daily tasks and to-do lists.</li>
+        <li><strong>Weather Forecast App</strong> – A mobile app providing real-time weather updates using an external API.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> <a href="mailto:arjunharshit2106@gmail.com">arjunharshit2106@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919363738699">+91 93637 38699</a></p>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer style="background-color: #1a237e; color: white; text-align: center; padding: 15px 10px; font-size: 0.9rem;">
+  <footer>
     <p>&copy; 2025 ARJUNHARSHIT K S. All rights reserved.</p>
   </footer>
 
