@@ -5,152 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARJUNHARSHIT K S - Portfolio</title>
   <style>
-    /* Global Styles */
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #f4f6f8;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f5f6fa;
       color: #333;
-      line-height: 1.6;
-      overflow-x: hidden;
     }
 
     a {
+      color: #0056b3;
       text-decoration: none;
-      color: inherit;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Header */
     header {
-      background: linear-gradient(135deg, #2c3e50, #4b6cb7);
-      color: #fff;
-      padding: 100px 20px;
+      background-color: #1e2a38;
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      position: relative;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 3rem;
-      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.3rem;
-      margin-top: 10px;
-      letter-spacing: 1px;
+      font-size: 1.1rem;
+      margin-top: 0;
+      color: #ccc;
     }
 
-    header .profile-img img {
-      width: 250px;
-      height: 250px;
+    .profile-img {
+      margin-top: 20px;
+    }
+
+    .profile-img img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 5px solid #fff;
       object-fit: cover;
-      margin-top: 200px;
+      border: 3px solid white;
     }
 
-    /* Main Content */
-    main {
-      max-width: 900px;
+    .container {
+      max-width: 950px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
     section {
-      background-color: #ffffff;
-      border-radius: 8px;
-      padding: 30px;
+      background-color: white;
+      padding: 25px;
       margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 0.8s ease-in-out;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
-      font-size: 1.8rem;
-      color: #2c3e50;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 8px;
+      color: #1e2a38;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+      font-size: 1.4rem;
+      margin-top: 0;
     }
 
     ul {
       padding-left: 20px;
-      color: #555;
     }
 
     ul li {
       margin-bottom: 10px;
     }
 
-    .profile-img {
-      text-align: center;
-      margin-top: -70px;
-    }
-
-    /* Contact Form */
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    form button {
-      background-color: #4b6cb7;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-
-    form button:hover {
-      background-color: #2c3e50;
-    }
-
-    /* Footer */
     footer {
-      background-color: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 20px 10px;
+      background-color: #1e2a38;
+      color: white;
+      padding: 15px;
       font-size: 0.9rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
     }
 
-    /* Scroll Effect */
-    section {
-      animation: fadeIn 1s ease-in-out;
+    /* Icon Enhancements */
+    .section-title::before {
+      margin-right: 8px;
     }
 
-    /* Animation for smooth section fade-in */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+    #about h2::before { content: "👤"; }
+    #skills h2::before { content: "⚙️"; }
+    #projects h2::before { content: "💼"; }
+    #achievements h2::before { content: "🏆"; }
+    #contact h2::before { content: "📞"; }
   </style>
 </head>
 <body>
@@ -159,90 +103,69 @@
     <h1>ARJUNHARSHIT K S</h1>
     <p>Aspiring Developer | CS & Mathematics Student</p>
     <div class="profile-img">
-      <img src="images.jpg" alt="ARJUNHARSHIT K S">
+      <img src="arjun1.jpg" alt="ARJUNHARSHIT">
     </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
+  <div class="container">
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
       <p>
-        Hello! I'm <strong>ARJUNHARSHIT K S</strong>, an enthusiastic and self-driven learner with a passion for technology, software development, and continuous growth. I recently completed my Class 12 education at <strong>SKV Vidhyaashram CBSE School</strong>, where I specialized in <strong>Computer Science</strong> and <strong>Mathematics</strong>.
+        Hello! I’m <strong>ARJUNHARSHIT K S</strong>, a driven and detail-oriented student from Tamil Nadu with a love for computers and logic.
+        I recently completed Class 12 from <strong>SKV Vidhyaashram CBSE School</strong>, majoring in Computer Science and Mathematics.
       </p>
       <p>
-        I am fascinated by how technology shapes the modern world and am especially interested in building intuitive and impactful digital experiences. Whether it's coding a new feature, designing a clean interface, or solving algorithmic challenges, I enjoy every part of the development process.
-      </p>
-      <p>
-        I'm currently focused on mastering front-end and back-end development, and I regularly engage with open-source projects and online communities to stay updated with industry trends.
+        I’m passionate about building purposeful digital experiences and strive to learn technologies that improve lives.
+        My interests include full-stack development, problem-solving, and collaborative innovation.
       </p>
     </section>
 
-    <section>
-      <h2>Skills</h2>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
       <ul>
         <li><strong>Languages:</strong> Python, C++, JavaScript</li>
-        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Web Development:</strong> HTML, CSS, JS (basic React)</li>
         <li><strong>Tools:</strong> Git, GitHub, VS Code, Figma</li>
-        <li><strong>Problem Solving:</strong> Algorithms, Data Structures</li>
-        <li><strong>Soft Skills:</strong> Communication, Teamwork, Time Management</li>
+        <li><strong>Concepts:</strong> Algorithms, Data Structures</li>
+        <li><strong>Soft Skills:</strong> Leadership, Teamwork, Time Management</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
       <ul>
-        <li><strong>Personal Portfolio Website:</strong> A responsive website to showcase my resume, projects, and contact info using HTML, CSS, and JavaScript.</li>
-        <li><strong>Task Manager Application:</strong> A simple to-do list web app to manage daily tasks efficiently with a clean user interface.</li>
-        <li><strong>Weather Forecast App:</strong> A mobile-friendly weather app that fetches live data using an external API.</li>
-        <li><strong>School Notice Board App:</strong> A local notification system to display announcements and events for students and teachers.</li>
+        <li><strong>Portfolio Website:</strong> A mobile-friendly personal portfolio built with HTML, CSS, and JS.</li>
+        <li><strong>Task Manager App:</strong> Simple to-do application for organizing daily routines.</li>
+        <li><strong>Weather Forecast App:</strong> A clean interface that fetches live data from an external API.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact Me</h2>
-      <p>
-        I’m always open to new opportunities, collaborations, or even just a chat about technology and development.
-        Feel free to reach out using the form below or through my contact details.
-      </p>
-
-      <ul style="list-style: none; padding-left: 0; color: #2c3e50;">
-        <li><strong>📧 Email:</strong> <a href="mailto:arjunharshit2106@gmail.com">arjunharshit2106@gmail.com</a></li>
-        <li><strong>📞 Phone:</strong> <a href="tel:+919363738699">+91 93637 38699</a></li>
-        <li><strong>🌍 Location:</strong> Tamil Nadu, India</li>
-        <li><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/arjunharshit" target="_blank">linkedin.com/in/arjunharshit</a></li>
+    <section id="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <ul>
+        <li><strong>🌍 World Record Holder:</strong> Recognized by India Book of Records for developing a full-stack app as a school student.</li>
+        <li><strong>🏅 Hackathon Winner:</strong> 1st place in "TechSpark 2024" for creating a smart school automation tool.</li>
+        <li><strong>🎯 Top 10 Finalist:</strong> National Coding CodeFest organized by EduStart India.</li>
+        <li><strong>🧠 Quiz Champion:</strong> Winner of Inter-School IT Quiz, Tamil Nadu Region.</li>
       </ul>
-
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="button" onclick="submitForm()">Send Message</button>
-      </form>
-      <p id="form-response" style="color: green;"></p>
     </section>
-  </main>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><strong>Email:</strong> <a href="mailto:arjunharshit2106@gmail.com">arjunharshit2106@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+919363738699">+91 93637 38699</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/arjunharshit" target="_blank">linkedin.com/in/arjunharshit</a></li>
+        <li><strong>Location:</strong> Tamil Nadu, India</li>
+      </ul>
+    </section>
+
+  </div>
 
   <footer>
-    <p>&copy; 2025 ARJUNHARSHIT K S. All rights reserved.</p>
+    &copy; 2025 ARJUNHARSHIT K S. All rights reserved.
   </footer>
 
-  <script>
-    function submitForm() {
-      // Simple validation
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      if (name && email && message) {
-        // If valid, show thank you message
-        document.getElementById('form-response').textContent = 'Thank you for your message. I\'ll get back to you soon!';
-        document.getElementById('contact-form').reset();
-      } else {
-        // Show error if fields are missing
-        document.getElementById('form-response').textContent = 'Please fill out all fields.';
-        document.getElementById('form-response').style.color = 'red';
-      }
-    }
-  </script>
 </body>
 </html>
